@@ -1,5 +1,6 @@
-//---ドロワー(ハンバーガー)メニュー
+
 $(function($) {
+//-------ドロワー(ハンバーガー)メニュー
   WindowHeight = $(window).height();
   $('#drawrmenu').css('height', WindowHeight); //メニューをwindowの高さいっぱいにする
 
@@ -24,5 +25,13 @@ $(function($) {
       $('#drawrmenu').hide();
     }
   });
+
+//-------<TBD>現在位置マップ
+  $(document).ready(function() {
+    $('.whtplace_btn').click(function(){ //クリックしたら
+      //検索してsrcタグをdoc要素にセットするか、phpでセットする
+    });
+  });
+
 });
 //---------------------------------------------------------
