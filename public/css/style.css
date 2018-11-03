@@ -206,6 +206,54 @@ body#list{
 -o-filter: grayscale(100%);
 filter: grayscale(100%);
 }
+/*-----ソート-------*/
+
+#sortlist {
+  overflow: hidden;
+  width: 90%;
+  margin: 1em auto;
+  text-align: center;
+}
+#sortlist select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+#sortlist select::-ms-expand {
+    display: none;
+}
+#sortlist.sl {
+  position: relative;
+  border: 1px solid #bbbbbb;
+  border-radius: 2px;
+  background: #ffffff;
+}
+#sortlist.sl::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.9em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666666;
+  pointer-events: none;
+}
+#sortlist.sl select {
+  padding: 8px 38px 8px 8px;
+  color: #666666;
+}
 
 /*詳細画面----------------------------------------------------*/
 body#detail{
