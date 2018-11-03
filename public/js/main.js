@@ -1,92 +1,28 @@
-jQuery(document).ready(function( $ ) {
+//---ドロワー(ハンバーガー)メニュー
+$(function($) {
+  WindowHeight = $(window).height();
+  $('#drawrmenu').css('height', WindowHeight); //メニューをwindowの高さいっぱいにする
 
-  // Smooth scroll for the menu and links with .scrollto classes
-  $('.smothscroll').on('click', function(e) {
-    e.preventDefault();
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      if (target.length) {
-
-        $('html, body').animate({
-          scrollTop: target.offset().top - 62
-        }, 1500, 'easeInOutExpo');
+  $(document).ready(function() {
+    $('.tglmenu').click(function(){ //クリックしたら
+        $('.tglmenu img#tglopen').toggle();
+        $('.tglmenu img#tglclose').toggle();
+      if($('#drawrmenu').is(":animated")){
+        return false;
+      }else{
+        $('#drawrmenu').animate({width:'toggle'}); //animateで表示・非表示
+        $(this).toggleClass('peke'); //toggleでクラス追加・削除
+        return false;
       }
-    }
+    });
   });
 
-  $('.carousel').carousel({
-    interval: 3500
-  });
-
-  // JavaScript Chart
-  var doughnutData = [{
-      value: 70,
-      color: "#1abc9c"
-    },
-    {
-      value: 30,
-      color: "#ecf0f1"
+  //別領域をクリックでメニューを閉じる
+  $(document).click(function(event) {
+    if (!$(event.target).closest('#drawrmenu').length) {
+      $('.tglmenu').removeClass('peke');
+      $('#drawrmenu').hide();
     }
-  ];
-  var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
-
-  // Bootstrap Chart
-  var doughnutData = [{
-    value: 90,
-    color: "#1abc9c"
-  },
-  {
-    value: 10,
-    color: "#ecf0f1"
-  }
-  ];
-  var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
-
-  // WordPress Chart
-  var doughnutData = [{
-    value: 65,
-    color: "#1abc9c"
-  },
-  {
-    value: 35,
-    color: "#ecf0f1"
-  }
-  ];
-  var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
-
-  // HTML Chart
-  var doughnutData = [{
-    value: 80,
-    color: "#1abc9c"
-  },
-  {
-    value: 20,
-    color: "#ecf0f1"
-  }
-  ];
-  var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-
-  // Photoshop Chart
-  var doughnutData = [{
-    value: 70,
-    color: "#1abc9c"
-  },
-  {
-    value: 30,
-    color: "#ecf0f1"
-  }
-  ];
-  var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
-
-  // Illustrator Chart
-  var doughnutData = [{
-    value: 50,
-    color: "#1abc9c"
-  },
-  {
-    value: 50,
-    color: "#ecf0f1"
-  }
-  ];
-  var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+  });
 });
+//---------------------------------------------------------
