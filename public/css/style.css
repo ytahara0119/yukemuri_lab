@@ -101,7 +101,8 @@ footer {
   margin: 0 10px 0 0;
 }
 /*トップ画面----------------------------------------------------*/
-body#front{
+body#front,
+body#caution{
     background-color:#f5f5f5;
 }
 body#front img{
@@ -259,6 +260,33 @@ filter: grayscale(100%);
 body#place{
     background-color:#f5f5f5;
 }
+
+/*注意画面----------------------------------------------------*/
+body#caution {
+}
+body#caution li {
+  list-style-type: none;
+}
+
+body#caution .how2list {text-align: center; margin: 10px; padding: 0px;}
+body#caution .how2list .inner {display: none;}
+body#caution .how2list p{cursor: pointer; padding: 10px; margin: 5px;}
+body#caution .how2list p.ac1{background: #F50057;}
+body#caution .how2list p.ac2{background: #FFEA00;}
+body#caution .how2list p.ac3{background: #64DD17;}
+body#caution .how2list .inner li{padding: 10px 0;}
+body#caution .how2list .inner li.content1-1{background: #dcdcdc;}
+body#caution .how2list .inner li.content1-2{background: #FFFFFF;}
+body#caution .how2list .inner li.content1-3{background: #dcdcdc;}
+body#caution .how2list .inner li.content2-1{background: #FFF59D;}
+body#caution .how2list .inner li.content2-2{background: #FFF9C4;}
+body#caution .how2list .inner li.content2-3{background: #FFFDE7;}
+body#caution .how2list .inner li.content3-1{background: #C5E1A5;}
+body#caution .how2list .inner li.content3-2{background: #DCEDC8;}
+body#caution .how2list .inner li.content3-3{background: #F1F8E9;}
+
+body#caution_detail h3 {background: #dcdcdc;  padding:2%; }
+body#caution_detail #cont{ margin: 0% 2%; background: #fff; }
 
 /*詳細画面----------------------------------------------------*/
 body#detail{
