@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ゆけむりラボ</title>
+  <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body id="list">
+  <header>
+    <div id="hmenu">
+      <div class="title">
+        <span><a href="javascript:history.back()">
+        <img class="mimg" src="img/hmenu/back.png">
+        </a></span>
+        <span>効能別<!-- Page Title --></span>
+      </div>
+      <div class="etc">
+        <a class="tglmenu">
+          <img id="tglopen" class="mimg leader" src="img/hmenu/dottedline.png">
+          <img id="tglclose" class="mimg leader" src="img/hmenu/close.png">
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Menu -->
+  <div id="drawrmenu">
+    <div id="personal">
+      <p class="accountphoto"><img src="img/tmenu/userphoto.png"></p>
+      <p class="accountname">Welcome Guest</p>
+      <p class="accountcode">@aureleriorn</p>
+    </div>
+    <ul id="menu">
+      <li><a href="#"><img src="img/tmenu/home.png">Home</a></li>
+      <li><a href="#"><img src="img/tmenu/bkig.png">Bookings</a></li>
+      <li><a href="#"><img src="img/tmenu/paym.png">Payments</a></li>
+      <li><a href="#"><img src="img/tmenu/ctus.png">Contact Us</a></li>
+      <li><a href="#"><img src="img/tmenu/atus.png">About Us</a></li>
+      <li><a href="#"><img src="img/tmenu/pypy.png">Privacy Policy</a></li>
+      <li><!-- space -->　</li>
+      <li><a href="#"><img src="img/tmenu/logt.png">Log Out</a></li>
+    </ul>
+  </div>
+  <!-- ./Menu -->
+  <main><!--/////////////////////////////////////////////-->
+    <!-- Sort -->
+<!--
+    <div id="sortlist" class="sl">
+      <select required>
+        <option value="">口コミが多い順</option>
+        <option value="">写真が多い順</option>
+        <option value="1">おすすめ順</option>
+        <option value="2">価格の安い順</option>
+        <option value="3">価格の高い順</option>
+      </select>
+    </div>
+ -->
+    <div class="sort_comment">
+      <p class="title_name">神経痛</p>
+      <p>主な泉質：単純温泉（単純泉）、塩化物泉、放射能泉</p>
+    </div>
+
+    <!-- ./Sort -->
+    <div id="onsenlist">
+      <a href="detail1.html">
+        <dl>
+          <dt><img src="img/list/1.png"></dt>
+          <dd class="name">竹瓦温泉</dd>
+          <dd class="setsumei">
+          明治12年（1879）創設で、当初建築されたものは竹屋根葺きの浴場で
+          その後改築されたものが瓦葺きであったため、
+          竹瓦温泉の名称がついたと伝えられています。
+          </dd>
+          <dd class="btn"><img src="img/icon/favorite1.png""><img src="img/icon/flg1.png"></dd>
+        </dl>
+      </a>
+      <a href="detail2.html">
+        <dl>
+          <dt><img src="img/list/2.png"></dt>
+          <dd class="name">ひょうたん温泉</dd>
+          <dd class="setsumei">
+          創業は大正11年。昔ながらの湯治場の雰囲気を残したのどかで素朴な温泉場です。
+          </dd>
+          <dd class="btn"><img src="img/icon/favorite1.png"" class="noselect"><img src="img/icon/flg1.png"></dd>
+        </dl>
+      </a>
+      <a href="detail3.html">
+        <dl>
+          <dt><img src="img/list/3.png"></dt>
+          <dd class="name">別府温泉 杉乃井ホテル</dd>
+          <dd class="setsumei">
+          5段からなる湯船を棚田状に広げた大展望露天風呂「棚湯」。
+          <br>
+          別府湾や街の夜景、そしてはるか四国佐田岬までを借景にした、圧倒的な開放感と眺望をお楽しみいただけます。
+          </dd>
+          <dd class="btn"><img src="img/icon/favorite1.png"><img src="img/icon/flg1.png" class="noselect"></dd>
+        </dl>
+      </a>
+      <a href="detail4.html">
+        <dl>
+          <dt><img src="img/list/4.png"></dt>
+          <dd class="name">浜田温泉</dd>
+          <dd class="setsumei">
+          古くは浜田鉱泉・内竈の湯とも言われ、明治中期の文献によると発見は明治30年ごろとされます。
+          </dd>
+          <dd class="btn"><img src="img/icon/favorite1.png"" class="noselect"><img src="img/icon/flg1.png" class="noselect"></dd>
+        </dl>
+      </a>
+      <a href="detail5.html">
+        <dl>
+          <dt><img src="img/list/5.png"></dt>
+          <dd class="name">明礬湯の里</dd>
+          <dd class="setsumei">
+          別府一の高台に位置する大露天岩風呂からは、明礬大橋や鶴見岳、高崎山などが眺められます。
+          </dd>
+          <dd class="btn"><img src="img/icon/favorite1.png""><img src="img/icon/flg1.png"></dd>
+        </dl>
+      </a>
+    </div>
+
+  </main><!--//////////////////////////////////////////////////////-->
+  <footer>
+  </footer>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
