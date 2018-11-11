@@ -105,9 +105,16 @@ body#front,
 body#caution{
     background-color:#f5f5f5;
 }
-body#front img{
+body#front header img{
     width: 100%;
     height: auto;
+}
+@media screen and (min-width:480px) {
+  body#front header img{
+    width: auto;
+    padding: 0px;
+    max-height: 145px;
+  }
 }
 body#front div#menuarea{
     text-align: center;
