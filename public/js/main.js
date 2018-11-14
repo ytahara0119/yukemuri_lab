@@ -2,7 +2,6 @@
 $(function($) {
 //-----------ドロワー(ハンバーガー)メニュー
     WindowHeight = $(window).height();
-    $('#drawrmenu').css('height', WindowHeight); //メニューをwindowの高さいっぱいにする
 
     $(document).ready(function() {
       $('.tglmenu').click(function(){ //クリックしたら
@@ -11,6 +10,7 @@ $(function($) {
         if($('#drawrmenu').is(":animated")){
           return false;
         }else{
+          $('#drawrmenu').css('height', WindowHeight); //メニューをwindowの高さいっぱいにする
           $('#drawrmenu').animate({width:'toggle'}); //animateで表示・非表示
           $(this).toggleClass('peke'); //toggleでクラス追加・削除
           return false;

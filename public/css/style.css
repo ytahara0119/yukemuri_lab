@@ -289,11 +289,11 @@ body#effect ul a{
   text-decoration: none;
 }
 
-body#effect ul {
+body#effect ul#effect {
   padding: 0% 2%;
   text-align: center;
 }
-body#effect li {
+body#effect ul#effect li {
   list-style-type: none;
   background: #dcdcdc;
   padding: 0.5em;
@@ -304,13 +304,13 @@ body#effect li {
   display: inline-block;
   text-align: center;
 }
-body#effect li:hover{
+body#effect ul#effect li:hover{
   background: #696969;
   color: #dcdcdc;
 }
 @media screen and (min-width:768px) {
     /*PC、タブレットは３列*/
-    body#effect li {
+    body#effect ul#effect li {
         width: 30%;
     }
 }
