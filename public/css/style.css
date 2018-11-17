@@ -31,14 +31,13 @@ header #hmenu .title {
     display: inline-block;
     *display: inline;
     zoom: 1;
-
-    width:90%;
+    width:85%;
 }
 header #hmenu .etc {
     display: inline-block;
     *display: inline;
     zoom: 1;
-    width:10%; float:right; text-align:right;
+    width:15%; float:right; text-align:right;
 }
 footer {
 	background-color:#000;
@@ -128,7 +127,7 @@ body#front ul#fmenuicon li {
     display: inline-block;
     list-style-type: none;
     width: 45%;
-    padding: 5%;
+    padding: 5% 5% 0% 5%;
     text-align: center;
     box-sizing: border-box;
     vertical-align: top;
